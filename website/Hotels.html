@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<title>Hotels</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body style="background-color:lightgrey;">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#index" class="w3-bar-item w3-button"><b>HM</b> Hotels</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#rooms" class="w3-bar-item w3-button w3-mobile">Rooms</a>
+     <a href="#about" class="w3-bar-item w3-button w3-mobile">About</a>
+     <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="https://www.itchotels.in/content/dam/projects/hotelswebsite/itc-hotels/luxury-collection/destination/mumbai/itc-maratha/website/Overview/Luxury%20Inspired%20by%20History/01%20Exterior.jpg.transform/transform-width-height-1280-545/image.jpeg" alt="hotel" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>HM</b></span> <span class="w3-hide-small w3-text-light-grey">Hotels</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+ 
+  <!-- Hotels Section -->
+  <div class="w3-container w3-padding-32" id="Hotels">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Hotels</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Hyatt Hotel</div>
+        <img src="data:image/jpeg;base64,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" alt="Hyatt hotel" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Radisson Hotel</div>
+        <img src="https://cache.radissonhotels.com/galleries/radblu/photos/webextra/indahad/map_drawer/exterior_295x205.jpg" alt="radisson" style="width:100%;height:120%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Hotel Hill top</div>
+        <img src="https://fathomasia.co.nz/wp-content/uploads/2017/10/Front-picture-2.jpg" alt="Hill top" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Cambay Grand</div>
+        <img src="https://ui.cltpstatic.com/places/hotels/3065/306561/images/result_w.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">No Votel</div>
+        <img src="http://www.mirchitravels.com/images/novotel-hotel-in-ahmedabad-on-mirchi-travels.jpg" alt="No Votel" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Hotel CareFour</div>
+        <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/134/134705486.jpg" alt="CarreFour" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Cama Hotel</div>
+        <img src="https://s-ec.bstatic.com/images/hotel/max1280x900/132/132630798.jpg" alt="cama" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Hotel Grand O7</div>
+        <img src="https://s-ec.bstatic.com/images/hotel/max1280x900/115/115878748.jpg" alt="Grand O7" style="width:120%">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Room Section -->
+  <div class="w3-content" style="max-width:1532px;">
+
+  <div class="w3-container w3-margin-top" id="rooms">
+    <h3>Rooms</h3>
+    <p>Change your view,<br/>
+        Stay you,<br/>
+       Relax, it's Holiday Inn,<br/>
+        Stay with someone you know,<br/>
+        The best surprise is no surprise.<br/></p>
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-col m3">
+      <label><i class="fa fa-calendar-o"></i> Check In</label>
+      <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY">
+    </div>
+    <div class="w3-col m3">
+      <label><i class="fa fa-calendar-o"></i> Check Out</label>
+      <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY">
+    </div>
+    <div class="w3-col m2">
+      <label><i class="fa fa-male"></i> Adults</label>
+      <input class="w3-input w3-border" type="number" placeholder="1">
+    </div>
+    <div class="w3-col m2">
+      <label><i class="fa fa-child"></i> Kids</label>
+      <input class="w3-input w3-border" type="number" placeholder="0">
+    </div>
+    <div class="w3-col m2">
+      <label><i class="fa fa-search"></i> Search</label>
+      <button class="w3-button w3-block w3-black">Search</button>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-padding-16">
+    <div class="w3-third w3-margin-bottom">
+      <img src="https://www.pertschy.com/uploads/pics/EZ_Deluxe_317_7302_02.jpg" alt="Ahmedabad" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Single Room</h3>
+        <h6 class="w3-opacity">From Rs 7000</h6>
+        <p>Single bed</p>
+        <p>15m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="http://www.nipistroytek.info/wp-content/uploads/2018/11/double-bedroom-with-room-dublin-city-centre-cassidys-hotel.jpg" alt="Ahmedabad" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Double Room</h3>
+        <h6 class="w3-opacity">From Rs 11000</h6>
+        <p>Queen-size bed</p>
+        <p>25m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="https://www.trinitycityhotel.com/files/hotel/hotel-a/Deluxe_Room.jpg?h=600&w=1000" alt="Ahmedabad" style="width:100%;height:100%">
+      <div class="w3-container w3-white">
+        <h3>Deluxe Room</h3>
+        <h6 class="w3-opacity">From Rs 15000</h6>
+        <p>King-size bed</p>
+        <p>40m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>About</b></h3>
+    <p>The HM hotel is the right choice for visitors who are searching for a combination of charm, peace and quiet, and a convenient position from which to explore Ahmedabad. It is a small, comfortable hotel, situated on the Sarkhej area. The hotel provides an internet point, and a Wi-Fi service.
+    </p>
+    
+  <!-- Contact Section -->
+  <div class="w3-container" id="contact">
+    <h2>Contact</h2>
+    <p>If you have any questions, do not hesitate to ask them.</p>
+    <i class="fa fa-map-marker w3-text-red" style="width:30px"></i> Ahmedabad, INDIA<br>
+    <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: +91 151416<br>
+    <i class="fa fa-envelope w3-text-red" style="width:30px"> </i> Email:Ahmedabadtourism@mail.com<br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-black w3-padding-large" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- Image of location/map -->
+<div class="w3-container">
+  <img src="https://wpcdn.hotelhosting.co/wp-content/uploads/sites/527/2015/05/header01_facade.jpg" class="w3-image" style="width:100%">
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-padding-32 w3-black w3-center w3-margin-top">
+  
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">Mayank</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<title>Food</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()"></div>
+    <div class="w3-center w3-padding-16"><h1>My Food</h1></div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="image\food\Methi na Gota.jpg" alt="" style="width:100%">
+      <h3>Methi na Gota</h3>
+      <p>Methi na Gota with Kadhi is a popular snack in Gujarat and it is very popular when the temperature is low or it is raining. ... It is deep fried snack and served with fried green chillies and Gram Flour Kadhi (Chutney). Though it is deep fried Fenugreek is known to promote good health and it is beneficial to the body.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="image\food\Kheema Samosa.jpg" alt="Steak" style="width:100%">
+      <h3>Kheema Samosa</h3>
+      <p>Bhatiyar Gali of Ahmedabad serves an unusual form of Samosa which is stuffed with Keema (minced meat) other than the regular potatoes and green peas. It a total delight for non-vegetarians. Don't miss if you are one.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="image\food\Ashrafi ki kulfi.jpg" alt="Cherries" style="width:100%">
+      <h3>Ashrafi ki kulfi</h3>
+      <p>A different, Indian version of Icecream - Kulfi is an indelible dessert of India. Asharfi ki kulfi is the most popular stop for all kulfi lovers in Ahmedabad. Do try to get a taste of one of the best Indian dessert made from thick cream and dry fruits served on a stick.</p>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="image\food\Khaman.jpg" alt="Khaman" style="width:100%">
+      <h3>Khaman/Dhokla</h3>
+      <p>It is the most famous snack item that people love to have with their lunch as a side dish. Made of gram floor, sour curd and chillies, this spongy sweet-salty cake is worth trying.</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="image\food\salty-khakhra.jpg" alt="Khakhra" style="width:100%">
+      <h3>Salty Khakhra</h3>
+      <p>Khakhra. Khakhra is a thin cracker common in the Gujarati and Rajasthani cuisines of western India, especially among Jains. ... Khakhras are individually hand-made and roasted to provide a crunchy and healthy snack that can be enjoyed with a selection of spicy pickles and sweet chutneys or with milk and tea.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="image\food\Undhiyu in Uttrayan.jpg" alt="Undhiyu" style="width:100%">
+      <h3>Undhiyu</h3>
+      <p>Undhiyu is a Gujarati mixed vegetable dish that is a regional specialty of Surat, India. The name of this dish comes from the Gujarati word "undhu", which translates to upside down, since the dish is traditionally cooked upside down underground in earthen pots, termed "matlu", which are fired from above.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="image\food\Gujarati-thali.jpg" alt="Gujarati Thali" style="width:100%">
+      <h3>Gujarti Thali</h3>
+      <p>The Gujarati Thali consists of various dishes like ringana methi nu shak (eggplant cooked with fenugreek leaves), Gujarati khatti mithi daal (sweet and sour lentil), undhiyu (mixed vegetable prepared with spinach paste), bhindi sambhariya (ladyfingers curry), aloo rasila (potato and tomato thin curry), steamed basmati rice, badshahi khichdi, Chapati, methi na thepla and bhakhri with kachumber salad along with various types of chutneys.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="image\food\kadhi.jpg" alt="Gujarati Kadhi" style="width:100%">
+      <h3>Gujarati Kadhi</h3>
+      <p>A staple in almost every household, Gujarati kadhi is a lovely curry with sweet undertones. This cooling curry is great to escape the heat..</p>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+   <b><p align ="center"<a href="https://www.w3.com/mayank/default.asp" target="_blank">Powered by Mayank</a></p></b>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+</body>
+</html>
